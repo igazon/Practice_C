@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "myfunctions.h"
+
 int main(int argc, char const *argv[]) {
 	// Hello World in C!
 	printf("%s\n", "Hello World in C!");

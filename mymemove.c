@@ -1,4 +1,5 @@
 #include "myfunctions.h"
+#include <stddef.h> /* for memcpy */
 
 void * mymemove (void *dest, const void *sourse, size_t len) {
 	unsigned char tmp[len];
