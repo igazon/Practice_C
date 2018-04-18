@@ -33,5 +33,46 @@ int main(int argc, char const *argv[]) {
 	new_symbols = "bcdefghijklmnopqrstuvwxyza";
 	printf("Encrypted text: %s\n", strtrns("secret message", old_symbols, new_symbols, string));	
 	printf("Decrypted text: %s\n", strtrns(string, new_symbols, old_symbols, string));
+
+	// ispower2
+	int val1 = 16;
+	int val2 = 14;
+	int val3 = -16;
+	float val4 = 0.5;
+	printf("val1: %d\n", ispower2(val1));
+	printf("val2: %d\n", ispower2(val2));
+	printf("val3: %d\n", ispower2(val3));
+	printf("val4: %d\n", ispower2(val4));
+
+	// pow2
+	int pow5 = 2;
+	printf("pow5: %d\n", pow2(pow5)); 
+	int pow6 = -1;
+	printf("pow6: %d\n", pow2(pow6)); 
+	printf("pow6: %d\n", pow2(0)); 
+	printf("pow6: %d\n", pow2(10)); 
+	printf("pow6: %d\n", pow2(-3)); 
+
+	// fact
+	printf("factorial: %d\n", fact(4));	
+	printf("factorial: %d\n", fact(-4));	
+
+	// sum_digit
+	printf("sum_digit: %d\n", sum_digit(123)); 	
+	printf("sum_digit: %d\n", sum_digit(1235));
+	
+	// nz_bits
+	printf("nz_bits: %d\n", nz_bits(15121)); 	// 7
+	printf("nz_bits: %d\n", nz_bits(10));	// 2
+	printf("nz_bits: %d\n", nz_bits(1));	// 1
+	printf("nz_bits: %d\n", nz_bits(2));	// 1
+	printf("nz_bits: %d\n", nz_bits(3));	// 2
+	printf("nz_bits: %d\n", nz_bits(4));	// 1
+	printf("nz_bits: %d\n", nz_bits(5));	// 5
+	printf("nz_bits: %d\n", nz_bits(6));	// 6
+	printf("nz_bits: %d\n", nz_bits(7));	// 3
+	printf("nz_bits: %d\n", nz_bits(8));	// 8
+
+	//
 	return 0;
 }
